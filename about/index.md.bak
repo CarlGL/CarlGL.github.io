@@ -10,9 +10,9 @@ date: 2019-05-11 17:32:44
 目前所在城市：北京
 
 # 个人简介
-有情怀又理响的伪文艺青年<br>后端工程师、前端学习中、运维学习中
+有情怀有理想的伪文艺青年<br>后端工程师、前端学习中、运维学习中
 
-#技能加点
+# 技能加点
 ```
 categories
 │
@@ -26,7 +26,8 @@ categories
 └── 爱生活(beautiful)
     ├── 听音乐(music)
     ├── 赏电影(movie)
-    ├── 羽毛球(badminton)
+    └── 羽毛球(badminton)
 ```
-#欢迎大家加weixin群，一起学习，一起撸码☺
+
+# 欢迎大家加weixin群一起学习一起撸码☺
 <img src="/images/weixin-group.png" alt="加入WeiXin群,前后端学习交流" width="250" style="margin: 0;">
