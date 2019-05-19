@@ -126,13 +126,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CarlGL">
-<meta property="og:url" content="http://gaolei365.com/archives/2019/05/index.html">
+  <meta name="description" content="问题出现环境1.系统 ： Ubuntu 16.04 TLS2.apache版本 ： apache2  重启apache原因 因服务器硬件故障自动关机，售后更换硬件处理完后，我这边优先需要恢复系统服务，服务起来后发现图片无法显示，但是图片标识出现，因此判断是apache服务有问题  例行执行service apache2 restart,发现apache无法启动服务 :open_mouth: 。 排">
+<meta name="keywords" content="Apache">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记一次Apache启动失败问题排查">
+<meta property="og:url" content="http://gaolei365.com/2019/05/16/记一次Apache启动失败问题排查/index.html">
 <meta property="og:site_name" content="CarlGL">
+<meta property="og:description" content="问题出现环境1.系统 ： Ubuntu 16.04 TLS2.apache版本 ： apache2  重启apache原因 因服务器硬件故障自动关机，售后更换硬件处理完后，我这边优先需要恢复系统服务，服务起来后发现图片无法显示，但是图片标识出现，因此判断是apache服务有问题  例行执行service apache2 restart,发现apache无法启动服务 :open_mouth: 。 排">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-05-19T07:39:30.519Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CarlGL">
+<meta name="twitter:title" content="记一次Apache启动失败问题排查">
+<meta name="twitter:description" content="问题出现环境1.系统 ： Ubuntu 16.04 TLS2.apache版本 ： apache2  重启apache原因 因服务器硬件故障自动关机，售后更换硬件处理完后，我这边优先需要恢复系统服务，服务起来后发现图片无法显示，但是图片标识出现，因此判断是apache服务有问题  例行执行service apache2 restart,发现apache无法启动服务 :open_mouth: 。 排">
 
 
 
@@ -142,7 +147,7 @@
 
   
   
-  <link rel="canonical" href="http://gaolei365.com/archives/2019/05/">
+  <link rel="canonical" href="http://gaolei365.com/2019/05/16/记一次Apache启动失败问题排查/">
 
 
 
@@ -152,7 +157,7 @@
   };
 </script>
 
-  <title>归档 | CarlGL</title>
+  <title>记一次Apache启动失败问题排查 | CarlGL</title>
   
 
 
@@ -200,7 +205,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -293,7 +298,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -388,135 +393,274 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaolei365.com/CarlGL.github.io/2019/05/16/记一次Apache启动失败问题排查/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CarlGL">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/CarlGL.github.io/images/qingwa-yuan.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CarlGL">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">记一次Apache启动失败问题排查
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-16 14:25:24" itemprop="dateCreated datePublished" datetime="2019-05-16T14:25:24+08:00">2019-05-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-19 15:39:30" itemprop="dateModified" datetime="2019-05-19T15:39:30+08:00">2019-05-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/CarlGL.github.io/categories/中间件/" itemprop="url" rel="index"><span itemprop="name">中间件</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">503</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      <span class="archive-page-counter">
+      
+
+      
+        <h3 id="问题出现环境"><a href="#问题出现环境" class="headerlink" title="问题出现环境"></a>问题出现环境</h3><p>1.系统 ： Ubuntu 16.04 TLS<br>2.apache版本 ： apache2 </p>
+<h3 id="重启apache原因"><a href="#重启apache原因" class="headerlink" title="重启apache原因"></a>重启apache原因</h3><hr>
+<p>因服务器硬件故障自动关机，售后更换硬件处理完后，我这边优先需要恢复系统服务，服务起来后<br>发现图片无法显示，但是图片标识出现，因此判断是apache服务有问题</p>
+<hr>
+<p>例行执行<code>service apache2 restart</code>,发现apache无法启动服务 :open_mouth: 。</p>
+<h3 id="排查问题思路"><a href="#排查问题思路" class="headerlink" title="排查问题思路"></a>排查问题思路</h3><p>1.先查看apache的状态<br><code>systemctl status apache2</code></p>
+<p>2.查看端口占用情况（<em>只用root有户权限可以，非root用户先切换成root</em> ）<br><code>netstat -lnp | grep 80</code></p>
+<p>发先80端口被java程序占用</p>
+<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>1.先杀掉占用80端口的java程序进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure></p>
+<p>2.重启apache服务，此时发现apache服务起来了 :smile:<br><code>service apache2 restart</code></p>
+<p>然后重启tomcat，启动java程序。登陆系统页面后可以正常显示图片</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>apache服务无法启动，除排查配置文件外，优先考虑端口号占用情况，可以快速排查问题所在</p>
+
+      
+    </div>
+
+    
+	
+	<div>
+      
+          <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+      
+	</div>
+	
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/CarlGL.github.io/tags/Apache/" rel="tag"># Apache</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
+
         
+
         
           
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/CarlGL.github.io/2019/05/16/记一次Apache启动失败问题排查/" itemprop="url">
-            
-              <span itemprop="name">记一次Apache启动失败问题排查</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-16T14:25:24+08:00" content="2019-05-16">
-          05-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/CarlGL.github.io/2019/05/08/hello-world/" itemprop="url">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span itemprop="name">Hello World</span>
+              <a href="/CarlGL.github.io/2019/05/08/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
-          </a>
-        
-      </h2>
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-08T19:00:45+08:00" content="2019-05-08">
-          05-08
-        </time>
-      </div>
+          <span class="post-nav-divider"></span>
 
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-    </div>
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
@@ -540,8 +684,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -684,6 +837,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题出现环境"><span class="nav-number">1.</span> <span class="nav-text">问题出现环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启apache原因"><span class="nav-number">2.</span> <span class="nav-text">重启apache原因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排查问题思路"><span class="nav-number">3.</span> <span class="nav-text">排查问题思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决问题"><span class="nav-number">4.</span> <span class="nav-text">解决问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -870,6 +1040,10 @@ setInterval("createtime()",250);
 
 
   
+  <script src="/CarlGL.github.io/js/scrollspy.js?v=7.1.1"></script>
+<script src="/CarlGL.github.io/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
