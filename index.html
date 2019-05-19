@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-19 15:51:05" itemprop="dateModified" datetime="2019-05-19T15:51:05+08:00">2019-05-19</time>
+                <time title="修改时间：2019-05-19 15:53:16" itemprop="dateModified" datetime="2019-05-19T15:53:16+08:00">2019-05-19</time>
               
             
           </span>
@@ -517,7 +517,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">479</span>
+                <span title="本文字数">481</span>
               
 
               
@@ -561,7 +561,7 @@
 <h3 id="二、排查问题思路"><a href="#二、排查问题思路" class="headerlink" title="二、排查问题思路"></a>二、排查问题思路</h3><p>1.先查看apache的状态<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status apache2</span><br></pre></td></tr></table></figure></p>
 <p>2.查看端口占用情况（<em>只用root有户权限可以，非root用户先切换成root</em> ）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -lnp | grep 80</span><br></pre></td></tr></table></figure></p>
 <p>发先80端口被java程序占用</p>
-<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>1.先杀掉占用80端口的java程序进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure></p>
+<h3 id="三、解决问题"><a href="#三、解决问题" class="headerlink" title="三、解决问题"></a>三、解决问题</h3><p>1.先杀掉占用80端口的java程序进程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 进程号</span><br></pre></td></tr></table></figure></p>
 <p>2.重启apache服务，此时发现apache服务起来了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service apache2 restart</span><br></pre></td></tr></table></figure></p>
 <p>然后重启tomcat，启动java程序。登陆系统页面后可以正常显示图片</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>apache服务无法启动，除排查配置文件外，优先考虑端口号占用情况，可以快速排查问题所在</p>
