@@ -471,7 +471,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-19 15:39:30" itemprop="dateModified" datetime="2019-05-19T15:39:30+08:00">2019-05-19</time>
+                <time title="修改时间：2019-05-19 15:45:00" itemprop="dateModified" datetime="2019-05-19T15:45:00+08:00">2019-05-19</time>
               
             
           </span>
@@ -550,11 +550,11 @@
       
         
           
-            <h3 id="问题出现环境"><a href="#问题出现环境" class="headerlink" title="问题出现环境"></a>问题出现环境</h3><p>1.系统 ： Ubuntu 16.04 TLS<br>2.apache版本 ： apache2 </p>
-<h3 id="重启apache原因"><a href="#重启apache原因" class="headerlink" title="重启apache原因"></a>重启apache原因</h3><hr>
+            <h3 id="重启apache原因"><a href="#重启apache原因" class="headerlink" title="重启apache原因"></a>重启apache原因</h3><hr>
 <p>因服务器硬件故障自动关机，售后更换硬件处理完后，我这边优先需要恢复系统服务，服务起来后<br>发现图片无法显示，但是图片标识出现，因此判断是apache服务有问题</p>
 <hr>
 <p>例行执行<code>service apache2 restart</code>,发现apache无法启动服务 :open_mouth: 。</p>
+<h3 id="问题出现环境"><a href="#问题出现环境" class="headerlink" title="问题出现环境"></a>问题出现环境</h3><p>1.系统 ： Ubuntu 16.04 TLS<br>2.apache版本 ： apache2 </p>
 <h3 id="排查问题思路"><a href="#排查问题思路" class="headerlink" title="排查问题思路"></a>排查问题思路</h3><p>1.先查看apache的状态<br><code>systemctl status apache2</code></p>
 <p>2.查看端口占用情况（<em>只用root有户权限可以，非root用户先切换成root</em> ）<br><code>netstat -lnp | grep 80</code></p>
 <p>发先80端口被java程序占用</p>
