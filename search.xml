@@ -5,7 +5,7 @@
     <url>%2FCarlGL.github.io%2F2019%2F05%2F16%2F%E8%AE%B0%E4%B8%80%E6%AC%A1Apache%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%2F</url>
     <content type="text"><![CDATA[重启apache原因 因服务器硬件故障自动关机，售后更换硬件处理完后，我这边优先需要恢复系统服务，服务起来后发现图片无法显示，但是图片标识出现，因此判断是apache服务有问题 例行执行service apache2 restart,发现apache无法启动服务。 一、问题环境1.系统:Ubuntu 16.04 TLS2.apache版本:apache2 二、排查问题思路1.先查看apache的状态1systemctl status apache2 2.查看端口占用情况（只用root有户权限可以，非root用户先切换成root ）1netstat -lnp | grep 80 发先80端口被java程序占用 三、解决问题1.先杀掉占用80端口的java程序进程1kill -9 进程号 2.重启apache服务，此时发现apache服务起来了1service apache2 restart 然后重启tomcat，启动java程序。登陆系统页面后可以正常显示图片 总结apache服务无法启动，除排查配置文件外，优先考虑端口号占用情况，可以快速排查问题所在]]></content>
       <categories>
-        <category>Apache</category>
+        <category>服务器</category>
       </categories>
       <tags>
         <tag>apache</tag>
