@@ -1,5 +1,7 @@
 /*样式二*/
 /* 控制下雪 */
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
 function snowFall(snow) {
     /* 可配置属性 */
     snow = snow || {};
